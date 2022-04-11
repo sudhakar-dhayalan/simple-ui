@@ -1,0 +1,38 @@
+.form-container {
+  margin: 40px;
+
+  .form-group {
+    margin-bottom: 24px;
+
+    label {
+      color: #1a1a1a;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    input {
+      padding-left: 5px;
+      color: #737373;
+      font-size: 14px;
+      height: 34px;
+      width: 30%;
+    }
+  }
+
+  .submit-btn {
+    margin-top: 12px;
+    height: 38px;
+    background-color: #0063e6;
+    width: 31%;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+
+    &:hover {
+      background-color: #f0f6ff;
+    }
+  }
+}

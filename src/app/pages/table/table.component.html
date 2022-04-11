@@ -1,0 +1,18 @@
+<section class="table-container">
+  <table class="table">
+    <tr class="table-header light-grey">
+      <ng-container *ngFor="let header of columnHeaders;">
+        <th [appSort]="rowData" data-order="desc">
+          {{ header | titlecase }}
+          <span class="arrow-up"></span>
+          <span class="arrow-down"></span>
+        </th>
+      </ng-container>
+    </tr>
+    <tr *ngFor="let cookie of rowData; let i = index" [ngClass]="{'light-grey': i%2 != 0}">
+      <td>{{ cookie.name }}</td>
+      <td>{{ cookie.price }}</td>
+      <td>{{ cookie.category }}</td>
+    </tr>
+  </table>
+</section>
